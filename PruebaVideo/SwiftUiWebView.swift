@@ -14,13 +14,18 @@ struct SwiftUiWebView : UIViewRepresentable {
     let pagina2 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/ControllerOnBoardingPF"
     let pagina3 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/onBoardingSVPF"
     
+    private static let userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.16; rv:83.0) Gecko/20100101 Firefox/83.0"
+    
     var url: URL
     //var finishedLoading: Binding<Bool>
     
     func makeUIView(context: Context) -> WKWebView {
         let view = WKWebView()
+        view.customUserAgent = Self.userAgent
+        
         view.navigationDelegate = context.coordinator
         
+
         view.load(URLRequest(url: url))
         return view
     }
