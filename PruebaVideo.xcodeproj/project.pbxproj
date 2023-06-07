@@ -13,7 +13,7 @@
 		B09104BC2A30C7D400014133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09104BB2A30C7D400014133 /* Preview Assets.xcassets */; };
 		B09104BE2A30C7D400014133 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09104BD2A30C7D400014133 /* Persistence.swift */; };
 		B09104C12A30C7D400014133 /* PruebaVideo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B09104BF2A30C7D400014133 /* PruebaVideo.xcdatamodeld */; };
-		B09104C82A30C7E300014133 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09104C72A30C7E200014133 /* MyWebView.swift */; };
+		B09104CA2A30CE8D00014133 /* SwiftUiWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09104C92A30CE8D00014133 /* SwiftUiWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		B09104BB2A30C7D400014133 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B09104BD2A30C7D400014133 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B09104C02A30C7D400014133 /* PruebaVideo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaVideo.xcdatamodel; sourceTree = "<group>"; };
-		B09104C72A30C7E200014133 /* MyWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		B09104C92A30CE8D00014133 /* SwiftUiWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			children = (
 				B09104B42A30C7D100014133 /* PruebaVideoApp.swift */,
 				B09104B62A30C7D100014133 /* ContentView.swift */,
-				B09104C72A30C7E200014133 /* MyWebView.swift */,
+				B09104C92A30CE8D00014133 /* SwiftUiWebView.swift */,
 				B09104B82A30C7D400014133 /* Assets.xcassets */,
 				B09104BD2A30C7D400014133 /* Persistence.swift */,
 				B09104BF2A30C7D400014133 /* PruebaVideo.xcdatamodeld */,
@@ -148,8 +148,8 @@
 			files = (
 				B09104BE2A30C7D400014133 /* Persistence.swift in Sources */,
 				B09104B72A30C7D100014133 /* ContentView.swift in Sources */,
-				B09104C82A30C7E300014133 /* MyWebView.swift in Sources */,
 				B09104C12A30C7D400014133 /* PruebaVideo.xcdatamodeld in Sources */,
+				B09104CA2A30CE8D00014133 /* SwiftUiWebView.swift in Sources */,
 				B09104B52A30C7D100014133 /* PruebaVideoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

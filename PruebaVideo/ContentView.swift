@@ -7,22 +7,20 @@
 
 import SwiftUI
 import CoreData
+import WebKit
 
 struct ContentView: View {
     @State private var isPresentWebView = false
+    @State private var webViewFinishedLoading = false
     
-    let url = URL(string: "https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-video-identificacion")
+    let url = URL(string: "https://www.sede.fnmt.gob.es/certificados/persona-fisica/obtener-certificado-video-identificacion")!
     
     var body: some View {
-        Button("FNMT") {
-            isPresentWebView.toggle()
-
-        }
-        .sheet(isPresented: $isPresentWebView) {
-            MyWebView(url: url!)
-        }
+        SwiftUiWebView(url: url, finishedLoading: $webViewFinishedLoading)
+               
     }
 }
+
 
 
 struct ContentView_Previews: PreviewProvider {
