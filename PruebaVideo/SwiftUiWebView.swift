@@ -15,7 +15,7 @@ struct SwiftUiWebView : UIViewRepresentable {
     let pagina3 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/onBoardingSVPF"
     
     var url: URL
-    var finishedLoading: Binding<Bool>
+    //var finishedLoading: Binding<Bool>
     
     func makeUIView(context: Context) -> WKWebView {
         let view = WKWebView()
@@ -45,9 +45,10 @@ struct SwiftUiWebView : UIViewRepresentable {
             if (webView.isLoading) {
                return
             }
-            print("Done Loading pagina \(parent.url.absoluteString)")
-            self.parent.finishedLoading.wrappedValue = true
-//            finishedLoading.wrappedValue = true
+            let url = webView.url!.absoluteString
+            print("Done Loading pagina \(url)")
+            
+            
         }
     }
     
