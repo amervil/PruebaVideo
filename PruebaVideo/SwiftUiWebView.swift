@@ -10,12 +10,17 @@ import WebKit
 
 struct SwiftUiWebView : UIViewRepresentable {
     
-  var url: URL
-  var finishedLoading: Binding<Bool>
+    let pagina1 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/OnBoarding?op=101"
+    let pagina2 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/ControllerOnBoardingPF"
+    let pagina3 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/onBoardingSVPF"
+    
+    var url: URL
+    var finishedLoading: Binding<Bool>
     
     func makeUIView(context: Context) -> WKWebView {
         let view = WKWebView()
         view.navigationDelegate = context.coordinator
+        
         view.load(URLRequest(url: url))
         return view
     }
@@ -40,7 +45,8 @@ struct SwiftUiWebView : UIViewRepresentable {
             if (webView.isLoading) {
                return
             }
-            print("Done Loading")
+            print("Done Loading pagina \(parent.url.absoluteString)")
+            self.parent.finishedLoading.wrappedValue = true
 //            finishedLoading.wrappedValue = true
         }
     }
