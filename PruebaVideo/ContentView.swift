@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var urlFinal: String = ""
     
     let pagina1 = "https://apus20.cert.fnmt.es/InterconexionOnboarding/OnBoarding?op=101"
-//    let pagina1 = "https://www.apple.com"
     
     var body: some View {
         ZStack {
@@ -23,8 +22,7 @@ struct ContentView: View {
                 SFSafariViewWrapper(url: URL(string: urlFinal)!)
             }
         }
-        
-        
+
     }
 }
 
