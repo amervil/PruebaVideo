@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E88B1142A3107B10036906C /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88B1132A3107B10036906C /* SafariView.swift */; };
 		B09104B52A30C7D100014133 /* PruebaVideoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09104B42A30C7D100014133 /* PruebaVideoApp.swift */; };
 		B09104B72A30C7D100014133 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09104B62A30C7D100014133 /* ContentView.swift */; };
 		B09104B92A30C7D400014133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09104B82A30C7D400014133 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E88B1132A3107B10036906C /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		B09104B12A30C7D100014133 /* PruebaVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09104B42A30C7D100014133 /* PruebaVideoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaVideoApp.swift; sourceTree = "<group>"; };
 		B09104B62A30C7D100014133 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				B09104B42A30C7D100014133 /* PruebaVideoApp.swift */,
 				B09104B62A30C7D100014133 /* ContentView.swift */,
 				B09104C92A30CE8D00014133 /* SwiftUiWebView.swift */,
+				1E88B1132A3107B10036906C /* SafariView.swift */,
 				B09104B82A30C7D400014133 /* Assets.xcassets */,
 				B09104BD2A30C7D400014133 /* Persistence.swift */,
 				B09104BF2A30C7D400014133 /* PruebaVideo.xcdatamodeld */,
@@ -150,6 +153,7 @@
 				B09104B72A30C7D100014133 /* ContentView.swift in Sources */,
 				B09104C12A30C7D400014133 /* PruebaVideo.xcdatamodeld in Sources */,
 				B09104CA2A30CE8D00014133 /* SwiftUiWebView.swift in Sources */,
+				1E88B1142A3107B10036906C /* SafariView.swift in Sources */,
 				B09104B52A30C7D100014133 /* PruebaVideoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
